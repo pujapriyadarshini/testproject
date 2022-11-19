@@ -1,0 +1,126 @@
+
+*{
+	box-sizing: border-box;
+	
+  }
+
+.row{
+  width:900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+h1{
+	text-align: center;
+	margin-bottom: 15px;
+	padding-bottom: 20px;
+	
+
+}
+
+ .box1 {
+	
+	background: red;
+	position: absolute;
+	top: -20px;
+	right: 0px;
+	margin-top: 20px;
+	padding: 5px;
+
+
+} 
+
+
+
+
+.box2 {
+	
+	background: green;
+	position: absolute;
+	top: -20px;
+	right: 0px;
+	margin-top: 20px;
+	color: white;
+	padding: 5px;
+} 
+
+.box3 {
+	
+	background: yellow;
+	position: absolute;
+	top: -20px;
+	right: 0px;
+	margin-top: 20px;
+	color: black;
+	padding: 5px;
+} 
+
+
+
+p{
+	padding:25px;
+	
+	margin-right: auto;
+    margin-left: auto;
+    font-family: Helvetica;
+  
+	
+}
+
+.col{
+    
+    height:180px;
+
+    float: left;
+    text-align: left;
+    position: relative;
+    background: lightgray;
+	border: 1px solid black;
+	
+	
+    
+}
+
+
+
+
+/******** Desktop view (992px and above) *********/
+
+
+@media (min-width:992px){
+    
+    .col1, .col2, .col3{
+        width:30%;
+        margin: 10px;
+    }
+    
+}
+
+/******** Tablet view (between 768px and 991px) *********/
+
+
+
+@media (min-width:768px) and (max-width:991px){
+    
+    .col1, .col2{
+        width:45%;
+        margin:10px ;
+
+    }
+    .col3{
+        width:90%;
+        margin: 10px 10px 10px 20px;
+
+    }
+}
+
+/******** Mobile view (equal to or less than 767px) *********/
+
+@media only screen and (max-width:767px){
+    .col{
+       float: none;
+        width:90%;
+        margin: 10px;
+    }
+}
+
